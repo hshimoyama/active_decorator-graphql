@@ -1,8 +1,6 @@
-# Graphql::ActiveDecorator
+# GraphQL::ActiveDecorator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/graphql/active_decorator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A toolkit for decorationg GraphQL field objects using [ActiveDecorator](https://github.com/amatsuda/active_decorator).
 
 ## Installation
 
@@ -22,7 +20,34 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+- Model
+
+```rb
+class Author < ActiveRecord::Base
+  # first_name:string last_name:string
+end
+```
+
+- Decorator
+
+```rb
+module AuthorDecorator
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+end
+```
+
+- GraphQL Type
+
+```rb
+Types::AuthorType = GraphQL::ObjectType.define do
+  name "Author"
+  field :full_name, !types.String
+end
+```
+
+then GraphQL::Field resolves `full_name` by decorated Author objects.
 
 ## Development
 
