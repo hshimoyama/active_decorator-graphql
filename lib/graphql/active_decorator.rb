@@ -1,6 +1,6 @@
 require "graphql/active_decorator/version"
 
-module Graphql
+module GraphQL
   module ActiveDecorator
     # Your code goes here...
   end
