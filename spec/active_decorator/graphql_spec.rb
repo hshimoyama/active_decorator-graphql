@@ -39,13 +39,7 @@ RSpec.describe ActiveDecorator::GraphQL do
     end
 
     specify do
-      query = <<~QUERY
-      {
-        test_model {
-          decoration_method
-        }
-      }
-      QUERY
+      query = "{ test_model { decoration_method } }"
 
       result = TestSchema.execute(
         query,
