@@ -1,7 +1,7 @@
 require "graphql"
 require "rails"
 require "active_decorator"
-require "graphql/active_decorator/version"
+require "active_decorator/graphql/version"
 
 module GraphQL
   class Field

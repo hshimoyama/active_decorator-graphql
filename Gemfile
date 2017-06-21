@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in graphql-active_decorator.gemspec
+# Specify your gem's dependencies in active_decorator-graphql.gemspec
 gemspec

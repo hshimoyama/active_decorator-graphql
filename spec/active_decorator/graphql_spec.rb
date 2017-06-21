@@ -1,10 +1,10 @@
 require "spec_helper"
 require "active_model"
 
-RSpec.describe GraphQL::ActiveDecorator do
+RSpec.describe ActiveDecorator::GraphQL do
   describe "::VERSION" do
     it "has a version number" do
-      expect(GraphQL::ActiveDecorator::VERSION).not_to be nil
+      expect(ActiveDecorator::GraphQL::VERSION).not_to be nil
     end
   end
 

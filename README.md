@@ -1,4 +1,4 @@
-# GraphQL::ActiveDecorator
+# ActiveDecorator::GraphQL
 
 A toolkit for decorationg GraphQL field objects using [ActiveDecorator](https://github.com/amatsuda/active_decorator).
 
@@ -7,7 +7,7 @@ A toolkit for decorationg GraphQL field objects using [ActiveDecorator](https://
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'graphql-active_decorator'
+gem 'active_decorator-graphql'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install graphql-active_decorator
+    $ gem install active_decorator-graphql
 
 ## Usage
 
@@ -57,7 +57,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/graphql-active_decorator.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hshimoyama/active_decorator-graphql.
 
 ## License
 

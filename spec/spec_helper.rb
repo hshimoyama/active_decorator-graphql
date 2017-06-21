@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "graphql/active_decorator"
+require "active_decorator/graphql"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "graphql/active_decorator/version"
+require "active_decorator/graphql/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "graphql-active_decorator"
-  spec.version       = GraphQL::ActiveDecorator::VERSION
+  spec.name          = "active_decorator-graphql"
+  spec.version       = ActiveDecorator::GraphQL::VERSION
   spec.authors       = ["Shimoyama, Hiroyasu"]
   spec.email         = ["h.shimoyama@gmail.com"]
 
   spec.summary       = %q{A toolkit for decorating GraphQL field objects.}
   spec.description   = %q{A toolkit for decorating GraphQL field objects using ActiveDecorator.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/hshimoyama/active_decorator-graphql"
   spec.license       = "MIT"
 
   spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
