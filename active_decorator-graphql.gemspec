@@ -17,12 +17,12 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.15"
-  spec.add_development_dependency "pry-byebug", "~> 3.0"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "pry-byebug"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec"
 
-  spec.add_dependency "active_decorator"
-  spec.add_dependency "graphql"
-  spec.add_dependency "rails"
+  spec.add_runtime_dependency "active_decorator"
+  spec.add_runtime_dependency "graphql"
+  spec.add_runtime_dependency "rails"
 end
