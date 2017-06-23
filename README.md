@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hshimoyama/active_decorator-graphql.svg?branch=master)](https://travis-ci.org/hshimoyama/active_decorator-graphql)
+
 # ActiveDecorator::GraphQL
 
 A toolkit for decorationg GraphQL field objects using [ActiveDecorator](https://github.com/amatsuda/active_decorator).
