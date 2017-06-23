@@ -22,6 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
+### Decorate All fields
+
 - Model
 
 ```rb
@@ -50,6 +52,27 @@ end
 ```
 
 then GraphQL::Field resolves `full_name` by decorated Author objects.
+
+### Decorate only specific fields
+
+If you want to decorate only specific fields ActiveDecorater::GraphQL provides options to control decoration default and field decoration.
+
+- Control decoration defaults (config/initializers/active_decorator-graphql.rb)
+
+```rb
+ActiveDecorator::GraphQL::Config.decorate = false # default: true
+```
+
+- Control specific field decoration (GraphQL Type)
+
+```rb
+Types::AuthorType = GraphQL::ObjectType.define do
+  name "Author"
+  field :full_name, !types.String, decorate: true
+  # true:  force enabling decoration
+  # false: force disabling decoration
+end
+```
 
 ## Development
 
