@@ -56,6 +56,7 @@ then GraphQL::Field resolves `full_name` by decorated Author objects.
 ### Decorate only specific fields
 
 If you want to decorate only specific fields ActiveDecorater::GraphQL provides options to control decoration default and field decoration.
+Class-based API does not support decorate option.
 
 - Control decoration defaults (config/initializers/active_decorator-graphql.rb)
 

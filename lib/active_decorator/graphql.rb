@@ -13,7 +13,13 @@ module GraphQL
 
     alias resolve_org resolve
     def resolve(object, arguments, context)
-      ::ActiveDecorator::Decorator.instance.decorate(object) if need_decorate?
+      if need_decorate?
+        if object.respond_to?(:object)
+          ::ActiveDecorator::Decorator.instance.decorate(object.object)
+        else
+          ::ActiveDecorator::Decorator.instance.decorate(object)
+        end
+      end
       resolve_org(object, arguments, context)
     end
 
