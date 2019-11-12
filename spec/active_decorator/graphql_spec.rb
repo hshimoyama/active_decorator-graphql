@@ -144,6 +144,10 @@ RSpec.describe ActiveDecorator::GraphQL do
         query(Types::QueryTypeClassBase)
       end
 
+      before do
+        ActiveDecorator::GraphQL::Config.decorate = true
+      end
+
       specify do
         query = "{ testModel { decorationMethod } }"
 
