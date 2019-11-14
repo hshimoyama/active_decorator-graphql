@@ -12,6 +12,14 @@ gemfile:
   - gemfiles/rails_5_1.gemfile
   - gemfiles/rails_5_2.gemfile
   - gemfiles/rails_6_0.gemfile
+jobs:
+  exclude:
+    - rvm: 2.2.10
+      gemfile: gemfiles/rails_6_0.gemfile
+    - rvm: 2.3.8
+      gemfile: gemfiles/rails_6_0.gemfile
+    - rvm: 2.4.9
+      gemfile: gemfiles/rails_6_0.gemfile
 notifications:
   email: false
 before_install: gem install bundler -v 1.17.3
