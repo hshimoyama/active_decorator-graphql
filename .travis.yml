@@ -14,4 +14,4 @@ gemfile:
   - gemfiles/rails_6_0.gemfile
 notifications:
   email: false
-before_install: gem install bundler
+before_install: gem install bundler -v 1.17.3
